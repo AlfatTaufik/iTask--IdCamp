@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event World</title>
+    <style>
+      .buttons {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 15px;
+      }
+      .button {
+        margin: 8px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons" align="center">
+      <h3 id="caption">Silakan tekan salah satu tombol di bawah...</h3>
+      <button class="button" id="tombol">Tombol Custom Event</button>
+    </div>
+    <script>
+      // tulis kode kamu di sini
+      const changeOption = new Event('changeOption');
+      window.addEventListener('load', function() {
+        const button = document.getElementById('tombol');
+        button.addEventListener('changeOption', customEventHandler);
+        button.addEventListener('click', function(){
+
+        });
+        function customEventHandler(ev) {
+        console.log('Event ' + ev.type + ' telah dijalankan');
+        const caption = document.getElementById('caption');
+        caption.innerText = 'Anda telah membangkitkan custom event';
+        }
+      }); 
+    </script>
+  </body>
+</html>
