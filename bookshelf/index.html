@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Nav Header -->
+    <header>
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Add Book</li>
+            </ul>
+            <img src="assets/_abc0de15-30fb-480a-bec6-99eac42022e5-removebg-preview.png" alt="" class="headerImage">
+            <ul>
+                <li>Add Book</li>
+                <li>Profile</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="container">
+            <h2>Welcome to the Library!</h2>
+        </section>
+        <!-- input section -->
+        <section class="input_section">
+            <h2>Masukan BukuMu</h2>
+            <form action="" id="inputBook">
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input type="text" name="" id="inputBookTitle" >
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input type="text" name="" id="inputBookAuthor" >
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label>
+                    <input type="number" name="" id="inputBookYear" >
+                </div>
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai Dibaca</label>
+                    <input type="checkbox" name="" id="inputBookIsComplete">
+                </div>
+                <button type="submit" id="bookSubmit">Masukan Buku Ke rak <span>Belum Selesai Dibaca</span></button>
+            </form>
+        </section>
+        <!-- Search Section -->
+        <section class="search_section">
+            <h2>Cari BukuMu</h2>
+            <form action="" id="searchBook">
+                <label for="searchBookTitle">Judul</label>
+                <input type="text" id="searchBookTitle">
+                <button type="submit" id="searchSubmit">Carikan dong</button>
+            </form>
+        </section>
+        <!-- Shelf -->
+      <section class="book_shelf">
+        <h2>Belum selesai dibaca</h2>
+
+        <div id="incompleteBookshelfList" class="book_list">
+               <!-- <article class="book_item"> -->
+                 <!-- <h3>Book Title</h3> -->
+                 <!-- <p>Penulis: John Doe</p> -->
+                 <!-- <p>Tahun: 2002</p> -->
+            
+                 <!-- <div class="action"> -->
+                   <!-- <button class="green">Selesai dibaca</button> -->
+                   <!-- <button class="red">Hapus buku</button> -->
+             <!--     </div> -->
+               <!-- </article> -->
+        </div>
+      </section>
+
+      <section class="book_shelf">
+        <h2>Selesai dibaca</h2>
+
+        <div id="completeBookshelfList" class="book_list">
+          <!--      <article class="book_item">-->
+          <!--        <h3>Book Title</h3>-->
+          <!--        <p>Penulis: John Doe</p>-->
+          <!--        <p>Tahun: 2002</p>-->
+          <!--        -->
+          <!--        <div class="action">-->
+          <!--          <button class="green">Belum selesai di Baca</button>-->
+          <!--          <button class="red">Hapus buku</button>-->
+          <!--        </div>-->
+          <!--      </article>-->
+        </div>
+      </section>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
